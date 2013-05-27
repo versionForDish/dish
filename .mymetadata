@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="dish"
+  id="myeclipse.1369544237391"
+  context-root="/dish"
+  j2ee-spec="5.0"
+  archive="dish.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

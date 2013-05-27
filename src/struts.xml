@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "struts-2.1.dtd" >
+<struts>
+<!-- struts2委托spring管理 -->
+    <constant name="struts.objectFactory" value="spring"/>
+    <!-- /crm/emp/add.action -->
+    <package name="siji_dish" extends="struts-default" namespace="/dish">
+        <action name="add" class="addBean" method="add">
+            <result>add.action</result>
+            <result>/user/add_user.jsp</result>
+        </action>
+        <action name="list" class="listBean" method="list">
+            <result>/user/list.jsp</result>
+        </action>
+        <action name="delete" class="deleteBean" method="delete">
+            <result>delete.action</result>
+            <result>/user/delete_suc.jsp</result>
+        </action>
+        <action name="update" class="updateBean" method="update">
+            <result>update.action</result>
+            <result>/user/edit_suc.jsp</result>
+        </action>
+        <action name="edit" class="editBean" method="edit">
+            <result>/user/edit.jsp</result>
+        </action>
+        <!-- Add actions here -->
+    </package>
+</struts>
